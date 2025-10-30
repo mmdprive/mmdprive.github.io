@@ -1,44 +1,169 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
-<title>MMD Privé — Terms of Service</title>
-<style>
-:root{--gold:#d4af37;--bg:#000;--fg:#fff;--muted:#bbb;--card:#0b0b0b;--border:#222}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Arial}
-.wrap{max-width:860px;margin:40px auto;padding:0 20px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px}
-h1{color:var(--gold);margin:0 0 6px 0}
-h2{margin:24px 0 8px 0;color:#eee}
-.meta{color:var(--muted);font-size:14px;margin-bottom:14px}
-ol{padding-left:20px}
-a{color:var(--gold);text-decoration:none}
-a:hover{text-decoration:underline}
-hr{border:0;border-top:1px solid var(--border);margin:18px 0}
-.small{font-size:13px;color:var(--muted)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MMD Terms & Conditions</title>
+  <meta name="description" content="ข้อตกลงและเงื่อนไขการใช้บริการ MMD Privé" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --bg:#000;          /* พื้นหลังหลัก */
+      --panel:#0d0d0d;    /* กล่องเนื้อหา */
+      --text:#f2f2f2;     /* ตัวอักษร */
+      --muted:#bdbdbd;    /* ตัวอักษรรอง */
+      --gold:#d4af37;     /* ไฮไลท์ทอง */
+      --gold-2:#f5c542;   /* ทองรอง */
+      --line:#06C755;     /* LINE brand */
+      --border:#1c1c1c;   /* เส้นขอบ */
+      --radius:16px;
+      --shadow:0 8px 24px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:"Inter","Prompt",system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Thai",sans-serif;
+      line-height:1.75;
+    }
+    .wrap{
+      max-width:960px; margin:48px auto; padding:0 20px;
+    }
+    header{
+      text-align:center; margin-bottom:28px;
+    }
+    .brand{
+      font-size:14px; letter-spacing:.12em; color:var(--muted);
+      text-transform:uppercase;
+    }
+    h1{
+      margin:10px 0 6px; color:var(--gold); font-weight:700; font-size:28px;
+    }
+    .subtitle{
+      color:var(--muted); font-size:15px;
+    }
+    .panel{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .panel .bar{
+      height:3px; background:linear-gradient(90deg,var(--gold),var(--gold-2));
+    }
+    .panel .content{
+      padding:28px;
+    }
+    h2{
+      margin:26px 0 8px; color:var(--gold-2); font-size:20px;
+    }
+    p{margin:10px 0}
+    ul{margin:8px 0 16px 20px}
+    a{color:var(--gold-2); text-decoration:none}
+    a:hover{text-decoration:underline}
+    /* -------- modal-body + QR block ---------- */
+    .modal-body{margin-top:6px}
+    .qr-block{
+      margin:22px auto 0; padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.00));
+      text-align:center; max-width:420px;
+    }
+    .qr-title{
+      font-weight:700; color:var(--gold); margin:0 0 8px; font-size:16px;
+    }
+    .qr-sub{color:var(--muted); font-size:13px; margin:0 0 14px}
+    .qr-img{
+      display:block; margin:0 auto 12px; border-radius:12px;
+      border:1px solid var(--border); width:140px; height:140px;
+      background:#111;
+    }
+    .btn-line{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 16px; border-radius:12px; text-decoration:none;
+      background:var(--line); color:#fff; font-weight:700;
+      box-shadow:0 6px 14px rgba(6,199,85,.25);
+      transition:transform .06s ease-in-out, filter .2s;
+    }
+    .btn-line:active{transform:translateY(1px)}
+    .btn-line svg{width:18px; height:18px; fill:#fff}
+    /* ----------------------------------------- */
+    .note{
+      margin-top:22px; font-size:13px; color:var(--muted);
+      border-top:1px dashed var(--border); padding-top:14px;
+    }
+    footer{
+      text-align:center; color:var(--muted);
+      margin:26px 0 10px; font-size:13px;
+    }
+    .home-link{display:inline-block; margin-top:6px}
+    @media (max-width:520px){
+      .panel .content{padding:20px}
+      h1{font-size:24px}
+    }
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
-      <h1>MMD Privé — Terms of Service</h1>
-      <div class="meta">อัปเดต: 30 ตุลาคม 2025 • ติดต่อ: <a href="mailto:support@mmdbkk.com">support@mmdbkk.com</a></div>
-      <ol>
-        <li><strong>ขอบเขตบริการ</strong> บริการด้านไลฟ์สไตล์และการคอนซีเอจแบบส่วนตัว ไม่ใช่บริการทางเพศที่ผิดกฎหมาย</li>
-        <li><strong>การจองและมัดจำ</strong> ชำระมัดจำ 30% เพื่อยืนยันสิทธิ์ ยอดที่เหลือชำระหน้างาน</li>
-        <li><strong>การยกเลิก/เลื่อนนัด</strong> แจ้งล่วงหน้าอย่างน้อย 24 ชม. มัดจำไม่คืนหากยกเลิกเกินกำหนด</li>
-        <li><strong>ความเป็นส่วนตัว</strong> ข้อมูลลูกค้าเป็นความลับ ใช้เพื่อการให้บริการเท่านั้น</li>
-        <li><strong>ข้อห้าม</strong> ความรุนแรง สิ่งผิดกฎหมาย สารเสพติด การบันทึกภาพเสียงโดยไม่ยินยอม</li>
-        <li><strong>ความปลอดภัย</strong> ทีมงานมีสิทธิ์ปฏิเสธงานที่เสี่ยงโดยคืนเงินส่วนที่สมเหตุสมผล</li>
-        <li><strong>การคืนเงิน</strong> คืนได้เฉพาะกรณีทีมงานยกเลิก หรือเหตุสุดวิสัยที่ตรวจสอบได้</li>
-        <li><strong>ข้อพิพาท</strong> ใช้กฎหมายไทย เป็นหลัก</li>
-      </ol>
-      <hr>
-      <p class="small">© MMD Privé. “Discreet by design, Elegant by choice.”</p>
-    </div>
+    <header>
+      <div class="brand">MMD PRIVÉ</div>
+      <h1>เงื่อนไขการใช้บริการ (Terms & Conditions)</h1>
+      <div class="subtitle">การใช้งานถือว่ายอมรับข้อตกลงทั้งหมดในหน้านี้</div>
+    </header>
+
+    <section class="panel">
+      <div class="bar"></div>
+      <div class="content">
+        <div class="modal-body">
+          <p><strong>MMD Privé</strong> ให้บริการเฉพาะสมาชิกที่ยืนยันตัวตนแล้ว ข้อมูลทุกอย่างถูกเก็บรักษาเป็นความลับภายใต้นโยบายความเป็นส่วนตัวของเรา</p>
+
+          <h2>1) การสมัครสมาชิก</h2>
+          <p>ผู้สมัครต้องให้ข้อมูลที่เป็นความจริงและสามารถตรวจสอบได้ หากตรวจพบข้อมูลเท็จ ทางเราสงวนสิทธิ์ปฏิเสธการให้บริการ</p>
+
+          <h2>2) การใช้บริการ</h2>
+          <ul>
+            <li>ห้ามติดต่อหรือนัดหมายกับนายแบบนอกระบบ</li>
+            <li>ห้ามเผยแพร่หรือส่งต่อข้อมูล โปรไฟล์ รูป หรือวิดีโอของนายแบบ</li>
+            <li>ต้องปฏิบัติตามกติกา มารยาท และคำแนะนำของทีมงาน</li>
+          </ul>
+
+          <h2>3) การชำระเงิน</h2>
+          <p>การจองต้องโอนมัดจำตามที่ระบุในใบยืนยัน ยอดคงเหลือต้องชำระก่อนเริ่มงานตามที่ระบุในเอกสารยืนยัน</p>
+
+          <h2>4) เลื่อน/ยกเลิก</h2>
+          <p>แจ้งล่วงหน้าอย่างน้อย 72 ชั่วโมง มิฉะนั้นถือว่าสละสิทธิ์มัดจำ</p>
+
+          <h2>5) การรักษาความลับ</h2>
+          <p>ทั้งลูกค้าและนายแบบต้องเคารพความเป็นส่วนตัวของกันและกัน ห้ามบันทึกหรือเผยแพร่ภาพ/เสียง/ข้อมูลส่วนบุคคลโดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษร</p>
+
+          <!-- ===== QR + LINE block (วางก่อน p.note ตามที่ขอ) ===== -->
+          <div class="qr-block">
+            <p class="qr-title">ติดต่อทีม MMD ผ่าน LINE</p>
+            <p class="qr-sub">สแกน QR หรือกดปุ่มด้านล่าง</p>
+            <img
+              class="qr-img"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://lin.ee/ttEOLQK"
+              alt="LINE QR to MMD"
+              width="140" height="140"
+            />
+            <a class="btn-line" href="https://lin.ee/ttEOLQK" target="_blank" rel="noopener">
+              <!-- simple LINE icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.8 4.2A10.4 10.4 0 0 0 12 2C6.5 2 2 6.1 2 11c0 4.3 3.4 7.9 8 8.8.3.1.6.2.6.5l.1 1.9c0 .3.3.4.5.2l2.1-2c.2-.2.5-.2.8-.2 5.6-.4 8.9-4.2 8.9-9 0-2.1-.9-4.1-2.2-5.6zM9.3 12.9H7V8.9h2.3v4zm4 0h-2.3V8.9H13v4zm4 0h-2.3V8.9H17v4z"/></svg>
+              เปิดใน LINE
+            </a>
+          </div>
+          <!-- ===== end QR block ===== -->
+
+          <p class="note">หมายเหตุ: การใช้บริการทุกกรณีอยู่ภายใต้การพิจารณาของทีมงาน หากพบพฤติกรรมเสี่ยงต่อความปลอดภัยหรือผิดกติกา ทางเราสงวนสิทธิ์ยุติการให้บริการทันที</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 MMD Privé — Discreet by design, Elegant by choice
+      <div><a class="home-link" href="https://mmdbkk.com/home">กลับหน้าหลัก</a></div>
+    </footer>
   </div>
 </body>
 </html>
